@@ -33,6 +33,27 @@ public class TallerVectoresCovenioSENACBN {
             }
         }
         
+        System.out.println("Listado de estudiantes:");
+        for(int i =0; i<n; i++){
+            for(int j=0; j<2; j++){
+                System.out.print(matriz[i][j]+" = ");
+            }
+            
+            System.out.println("");
+        }
+        
+        System.out.println("Promedio de estudiantes: \n"+(promedio/n));
+        int mayor=0, menor=0;
+        for(int i =0; i<n; i++){
+            for(int j=1; j<=1; j++){
+                if(Float.parseFloat(matriz[i][j])>Float.parseFloat(matriz[mayor][j])){
+                    mayor = i;
+                }else if(Float.parseFloat(matriz[i][j])<Float.parseFloat(matriz[menor][j])){
+                    menor=i;
+                }
+            }
+        }
+        
         
     }
     
