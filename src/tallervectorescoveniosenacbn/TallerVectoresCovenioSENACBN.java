@@ -54,7 +54,18 @@ public class TallerVectoresCovenioSENACBN {
             }
         }
         
+        System.out.println("Mayor nota: "+matriz[mayor][0]+" = "+matriz[mayor][1]+"\nMenor nota: "+matriz[menor][0]+" = "+matriz[menor][1]);
         
+        int cont=0;
+        for(int i =0; i<n; i++){
+            for(int j=1; j<2; j++){
+                if(Float.parseFloat(matriz[i][j])>=3){
+                    cont++;
+                }
+            }
+        }
+        
+        System.out.println("Su materia la han ganado un total de "+cont+" estudiante(s)");
     }
     
 }
